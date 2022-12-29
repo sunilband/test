@@ -1,14 +1,16 @@
-ip=int(input("what do you want to do? 1:add 2:sub 3:mul \n"))
-a=int(input("enter value 1"))
-b=int(input("enter value 2"))
+ip=int(input("what do you want to do? \n1:addition \n2:substract \n3:multipy \n4:divide\n Enter choice number\n"))
+a=int(input("enter first value\n"))
+b=int(input("enter second value\n"))
 
 def calc(a,b):
     if ip==1:
-        print (a+b)
+        print (f"the addition of {a} and {b} is {a+b}")
     elif ip==2:
-        print (a-b)
+        print (f"the substraction of {a} and {b} is {a-b}")
     elif ip==3:
-        print (a*b)
+        print (f"the multiplication of {a} and {b} is {a*b}")
+    elif ip==4:
+        print (f"the division of {a} and {b} is {a+b}")
     else:
         print("enter valid choice")
 
